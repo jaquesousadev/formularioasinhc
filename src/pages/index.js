@@ -122,10 +122,7 @@ export default function Home() {
                 <label className={styles.label}>CPF</label>                
                 <input                            
                   name='CPF_Dep_2'
-                  className={styles.inputcpf} 
-                  value={cpf}
-                  onChange={(event) => setCpf(event.target.value)}
-                             
+                  className={styles.inputcpf}                             
                 />
 
                 <label className={styles.labeltituloinput}>Dependente 3</label>
@@ -157,9 +154,7 @@ export default function Home() {
                 <input                            
                   name='CPF_Dep_3'
                   className={styles.inputcpf} 
-                  value={cpf}
-                  onChange={(event) => setCpf(event.target.value)}
-                             
+                                      
                 />
                 
                 <MeuComponente />

@@ -461,6 +461,11 @@
     width: 400px;
     }
 
+  .form > button {
+    max-width: 100%;
+   
+  }  
+
   
 
   
