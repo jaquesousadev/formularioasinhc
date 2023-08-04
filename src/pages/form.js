@@ -18,17 +18,17 @@ const MeuComponente = () => {
       <button
             type='button' 
             className={styles.btnprymary} 
-            onClick={handleClick}>Dependentes
+            onClick={handleClick}>+ Dependentes
              
       </button>
         
-        {exibirFormulario && (<label className={styles.labeltituloinput}>DEPENDENTE 1</label>)}
+        {exibirFormulario && (<label className={styles.labeltituloinput}>DEPENDENTE 4</label>)}
 
          {exibirFormulario && (<label className={styles.label}>Nome Completo</label>)}
 
             {exibirFormulario && (
                   <input 
-                  name='nome_completo_dep'
+                  name='nome_dep_4'
                   className={styles.inputnomedep} 
                   type='text' 
                   />
@@ -38,40 +38,40 @@ const MeuComponente = () => {
       
             {exibirFormulario && (   
                <input 
-                  name='data_nasc_dep'
+                  name='data_nasc_dep_4'
                   className={styles.inputdatanasc} 
                   type='date' 
                />
             )}
 
-      {exibirFormulario && (<label className={styles.label}>RG Dependente</label>)}
+      {exibirFormulario && (<label className={styles.label}>RG</label>)}
 
             {exibirFormulario && (   
                <input
-                  name='rg_dep'
+                  name='rg_dep_4'
                   className={styles.inputrg} 
                   type='text' 
                />
             )}
 
-      {exibirFormulario && (<label className={styles.label}>CPF Dependente</label>)}
+      {exibirFormulario && (<label className={styles.label}>CPF</label>)}
 
             {exibirFormulario && (   
                <input
-                  name='cpf_dep'
+                  name='cpf_dep_4'
                   className={styles.inputcpf} 
                   type='text'
                  
                />
             )}
 
-      {exibirFormulario && (<label className={styles.labeltituloinput}>DEPENDENTE 2</label>)}
+      {exibirFormulario && (<label className={styles.labeltituloinput}>DEPENDENTE 5</label>)}
 
-         {exibirFormulario && (<label className={styles.label}>Data de Nascimento</label>)}
+         {exibirFormulario && (<label className={styles.label}>Nome Completo</label>)}
 
             {exibirFormulario && (
                <input 
-               name='nome_completo_dep2'
+               name='nome_completo_dep_5'
                className={styles.inputnomedep} 
                type='text' 
                />
@@ -81,39 +81,39 @@ const MeuComponente = () => {
       
             {exibirFormulario && (   
                <input 
-                  name='data_nasc_dep2'
+                  name='data_nasc_dep_5'
                   className={styles.inputdatanasc} 
                   type='date' 
                />
             )}
 
-         {exibirFormulario && (<label className={styles.label}>RG Dependente</label>)}
+         {exibirFormulario && (<label className={styles.label}>RG</label>)}
 
             {exibirFormulario && (   
                <input
-                  name='rg_dep2'
+                  name='rg_dep_5'
                   className={styles.inputrg} 
                   type='text' 
                />
             )}
 
-         {exibirFormulario && (<label className={styles.label}>CPF Dependente</label>)}
+         {exibirFormulario && (<label className={styles.label}>CPF</label>)}
 
             {exibirFormulario && (   
                <input
-                  name='cpf_dep2'
+                  name='cpf_dep_5'
                   className={styles.inputcpf} 
                   type='text'
                />
             )}
 
-      {exibirFormulario && (<label className={styles.labeltituloinput}>DEPENDENTE 3</label>)}
+      {exibirFormulario && (<label className={styles.labeltituloinput}>DEPENDENTE 6</label>)}
 
       {exibirFormulario && (<label className={styles.label}>Nome Completo</label>)}
 
          {exibirFormulario && (
                <input 
-               name='nome_completo_dep3'
+               name='nome_dep_6'
                className={styles.inputnomedep} 
                type='text' 
                />
@@ -123,27 +123,27 @@ const MeuComponente = () => {
 
          {exibirFormulario && (   
             <input 
-               name='data_nasc_dep3'
+               name='data_nasc_dep_6'
                className={styles.inputdatanasc} 
                type='date' 
             />
          )}
 
-      {exibirFormulario && (<label className={styles.label}>RG Dependente</label>)}
+      {exibirFormulario && (<label className={styles.label}>RG</label>)}
 
          {exibirFormulario && (   
             <input
-               name='rg_dep3'
+               name='rg_dep_6'
                className={styles.inputrg} 
                type='text' 
             />
          )}
 
-      {exibirFormulario && (<label className={styles.label}>CPF Dependente</label>)}
+      {exibirFormulario && (<label className={styles.label}>CPF</label>)}
 
          {exibirFormulario && (   
             <input
-               name='cpf_dep3'
+               name='cpf_dep_6'
                className={styles.inputcpf} 
                type='text'
             />

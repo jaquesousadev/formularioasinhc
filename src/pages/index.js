@@ -44,49 +44,42 @@ export default function Home() {
               <HiddenDateTimeField />
 
               <h1 className={styles.titulo}>Formulário de cadastro</h1>
-              <p>Olá, Seja bem vindo a Assistência funeral do Grupo Zelo,</p>
-              <p>Este formulário é exclusivo para os associados ativos da ASSOCIACAO DOS TRABALHADORES AUTARQUICOS E FUNDACIONAIS DO HOSPITAL DAS CLINICAS DA FMU.</p>
-              <p>A ASINHC em parceria com a CBPF está disponibilizando um benefício para os trabalhadores e colaboradores do Hospital das Clínica, 
-              um plano funerário gratuito para o associado da ASINHC (os depentendes terão o custo de R$ 5,60 por pessoa).</p>
-              <p>
+              <h1 className={styles.textdois}>Olá, Seja bem vindo a Assistência funeral do Grupo Zelo,</h1>
+              <h1 className={styles.textdois}>Este formulário é exclusivo para os associados ativos da ASSOCIACAO DOS TRABALHADORES AUTARQUICOS E FUNDACIONAIS DO HOSPITAL DAS CLINICAS DA FMU.</h1>
+              <h1 className={styles.textdois}>A ASINHC em parceria com a CBPF está disponibilizando um benefício para os trabalhadores e colaboradores do Hospital das Clínica, 
+              um plano funerário gratuito para o associado da ASINHC (os depentendes terão o custo de R$ 5,60 por pessoa).</h1>
+              <h1 className={styles.textdois}>
               Ao adquirir o plano funeral, os clientes terão a vantagem de descontos em farmácias, exames e consultas em clínicas. Além disso, será disponibilizado um serviço de telemedicina com 25 especialidades, disponível 24 horas por dia. 
               Também poderão usufruir de descontos em grandes lojas e terão acesso exclusivo a um aplicativo chamado Ducash.
-              </p>
-              <p>
-              Informamos que o Grupo Zelo está realizando uma reorganização societária e, no âmbito desta reorganização, a UNION ASSISTÊNCIA FUNERAL LTDA. 
-              (“UNION”) está sendo incorporada por sua única sócia COMPANHIA BRASILEIRA DE PLANOS FUNERÁRIOS S/A (“CBPF”).
-              </p>
-              <p>
-              Neste contexto, a UNION será extinta por incorporação e a CBPF assumirá a responsabilidade por todos os direitos e obrigações ora de responsabilidade da sociedade extinta, 
-              nos termos do Código Civil. Deste modo, ressaltamos todos os Contratos e Acordos Comerciais firmados pela UNION serão mantidos pela CBPF, nos mesmos termos e condições atualmente em vigor.
-              </p>  
-
-                <label className={styles.label}>Nome completo*</label>
+              </h1>
+             
+                <label className={styles.label}>Titular Associado*</label>
                 <input 
                   name='Nome_Titular'
                   className={styles.input} 
                   type='text' 
-                  required 
+                  required                 
                 />
+                <label className={styles.labeltituloinput}>Dependente 1</label>
+                <label className={styles.label}>Nome Completo*</label>
+                <input 
+                  name='Nome_Dep_1'
+                  className={styles.inputnomedep} 
+                  type='text' 
+                />
+
                 <label className={styles.label}>Data de Nascimento*</label>
                 <input
-                  name='Data_Nascimento_titular' 
+                  name='Data_Nascimento_Dep_1' 
                   className={styles.inputdatanasc} 
                   type='date'
                   required  
                   
                 />
-                <label className={styles.label}>Celular*</label>
-                <PhoneInput
-                  name='Celular_titular'  
-                  value={phone}
-                  onChange={(event) => setPhone(event.target.value)}
-                  required 
-                  
-                  />
+                
                 <label className={styles.label}>RG*</label> 
                 <input
-                  name='RG_titular'  
+                  name='RG_Dep_1'  
                   className={styles.inputrg} 
                   type='text'
                   required  
@@ -94,54 +87,81 @@ export default function Home() {
                 />
                 <label className={styles.label}>CPF*</label>                
                 <MaskedInput                            
-                  name='CPF_titular'
+                  name='CPF_Dep_1'
                   className={styles.inputcpf} 
                   value={cpf}
                   onChange={(event) => setCpf(event.target.value)}
-                  required 
-                  
-                    
+                  required             
                 />
-                <label className={styles.label}>E-mail*</label>
+
+                <label className={styles.labeltituloinput}>Dependente 2</label>
+                <label className={styles.label}>Nome Completo</label>
                 <input 
-                  name='Email_titular'  
-                  className={styles.input} 
-                  type='email'
-                  required  
-                  
-                />
-                <label className={styles.labelend}>Endereço (Logradouro, Numero, Complemento e Bairro.)*</label>
-                <input
-                  name='Endereco_titular'   
-                  className={styles.input} 
+                  name='Nome_Dep_2'
+                  className={styles.inputnomedep} 
                   type='text' 
-                  required 
-                  
                 />
-                <label className={styles.label}>CEP*</label>
-                <CEPInput
-                  name='CEP_titular'   
-                  value={cep}
-                  onChange={handleCepChange}
-                  required 
-                  
-                />
-                <label className={styles.label}>Município*</label>
-                <input 
-                  name='Municipio_titular'  
-                  className={styles.input} 
-                  type='text'
-                  required  
-                  
-                />
-                <label className={styles.label}>UF*</label>
+
+                <label className={styles.label}>Data de Nascimento</label>
                 <input
-                  name='UF_titular'   
-                  className={styles.inputuf} 
-                  type='text'
-                  required  
+                  name='Data_Nascimento_Dep_2' 
+                  className={styles.inputdatanasc} 
+                  type='date'
+                    
                   
                 />
+                
+                <label className={styles.label}>RG</label> 
+                <input
+                  name='RG_Dep_2'  
+                  className={styles.inputrg} 
+                  type='text'
+                  
+                  
+                />
+                <label className={styles.label}>CPF</label>                
+                <input                            
+                  name='CPF_Dep_2'
+                  className={styles.inputcpf} 
+                  value={cpf}
+                  onChange={(event) => setCpf(event.target.value)}
+                             
+                />
+
+                <label className={styles.labeltituloinput}>Dependente 3</label>
+                <label className={styles.label}>Nome Completo</label>
+                <input 
+                  name='Nome_Dep_3'
+                  className={styles.inputnomedep} 
+                  type='text' 
+                />
+
+                <label className={styles.label}>Data de Nascimento</label>
+                <input
+                  name='Data_Nascimento_Dep_3' 
+                  className={styles.inputdatanasc} 
+                  type='date'
+                   
+                  
+                />
+                
+                <label className={styles.label}>RG</label> 
+                <input
+                  name='RG_Dep_3'  
+                  className={styles.inputrg} 
+                  type='text'
+                  
+                  
+                />
+                <label className={styles.label}>CPF</label>                
+                <input                            
+                  name='CPF_Dep_3'
+                  className={styles.inputcpf} 
+                  value={cpf}
+                  onChange={(event) => setCpf(event.target.value)}
+                             
+                />
+                
                 <MeuComponente />
         </form>
          
