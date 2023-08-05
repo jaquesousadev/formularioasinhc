@@ -70,7 +70,7 @@ export default function Home() {
 
                 <label className={styles.label}>Data de Nascimento*</label>
                 <input
-                  name='Data_Nascimento_Dep_1' 
+                  name='Data_Nasc_Dep_1' 
                   className={styles.inputdatanasc} 
                   type='date'
                   required  
@@ -104,7 +104,7 @@ export default function Home() {
 
                 <label className={styles.label}>Data de Nascimento</label>
                 <input
-                  name='Data_Nascimento_Dep_2' 
+                  name='Data_Nasc_Dep_2' 
                   className={styles.inputdatanasc} 
                   type='date'
                     
@@ -135,7 +135,7 @@ export default function Home() {
 
                 <label className={styles.label}>Data de Nascimento</label>
                 <input
-                  name='Data_Nascimento_Dep_3' 
+                  name='Data_Nasc_Dep_3' 
                   className={styles.inputdatanasc} 
                   type='date'
                    
