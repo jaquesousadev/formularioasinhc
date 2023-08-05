@@ -142,7 +142,7 @@
 }
 
 /* Mobile */
-@media (max-width: 700px) {
+/*@media (max-width: 700px) {
   .content {
     padding: 4rem;
   }
@@ -458,13 +458,16 @@
 
   .cardform {
     padding: 10px 15px 15px;
-    width: 400px;
+    width: 300px;
     }
 
-  .form > button {
-    max-width: 100%;
-   
-  }  
+    .btnprymary {
+      width: 300px;
+    }
+
+    .inputdatanasc {
+      width: 100px;
+    }
 
   
 
