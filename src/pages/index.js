@@ -60,7 +60,7 @@ export default function Home() {
                   type='text' 
                   required                 
                 />
-                <label className={styles.labeltituloinput}>Dependente 1</label>
+                <label className={styles.labeltituloinput}>DEPENDENTE 1</label>
                 <label className={styles.label}>Nome Completo*</label>
                 <input 
                   name='Nome_Dep_1'
@@ -73,8 +73,7 @@ export default function Home() {
                   name='Data_Nasc_Dep_1' 
                   className={styles.inputdatanasc} 
                   type='date'
-                  required  
-                  
+                  required                   
                 />
                 
                 <label className={styles.label}>RG*</label> 
@@ -94,7 +93,7 @@ export default function Home() {
                   required             
                 />
 
-                <label className={styles.labeltituloinput}>Dependente 2</label>
+                <label className={styles.labeltituloinput}>DEPENDENTE 2</label>
                 <label className={styles.label}>Nome Completo</label>
                 <input 
                   name='Nome_Dep_2'
@@ -106,9 +105,7 @@ export default function Home() {
                 <input
                   name='Data_Nasc_Dep_2' 
                   className={styles.inputdatanasc} 
-                  type='date'
-                    
-                  
+                  type='date'                  
                 />
                 
                 <label className={styles.label}>RG</label> 
@@ -125,7 +122,7 @@ export default function Home() {
                   className={styles.inputcpf}                             
                 />
 
-                <label className={styles.labeltituloinput}>Dependente 3</label>
+                <label className={styles.labeltituloinput}>DEPENDENTE 3</label>
                 <label className={styles.label}>Nome Completo</label>
                 <input 
                   name='Nome_Dep_3'
@@ -146,7 +143,7 @@ export default function Home() {
                   className={styles.inputrg} 
                   type='text'   
                 />
-                
+
                 <label className={styles.label}>CPF</label>                
                 <input                            
                   name='CPF_Dep_3'
