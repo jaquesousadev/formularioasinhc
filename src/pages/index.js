@@ -45,7 +45,7 @@ export default function Home() {
 
               <h1 className={styles.titulo}>Formulário de cadastro</h1>
               <h1 className={styles.textdois}>Olá, Seja bem vindo a Assistência funeral do Grupo Zelo,</h1>
-              <h1 className={styles.textdois}>Este formulário é exclusivo para os associados ativos da ASSOCIACAO DOS TRABALHADORES AUTARQUICOS E FUNDACIONAIS DO HOSPITAL DAS CLINICAS DA FMU.</h1>
+              <h1 className={styles.textdois}>Este formulário é exclusivo para os associados ativos da ASSOCIACAO DOS TRABALHADORES AUTARQUICOS E FUNDACIONAIS DO HOSPITAL DAS CLINICAS DA FMUSP.</h1>
               <h1 className={styles.textdois}>A ASINHC em parceria com a CBPF está disponibilizando um benefício para os trabalhadores e colaboradores do Hospital das Clínica, 
               um plano funerário gratuito para o associado da ASINHC (os depentendes terão o custo de R$ 5,60 por pessoa).</h1>
               <h1 className={styles.textdois}>
@@ -137,24 +137,20 @@ export default function Home() {
                 <input
                   name='Data_Nasc_Dep_3' 
                   className={styles.inputdatanasc} 
-                  type='date'
-                   
-                  
+                  type='date'             
                 />
                 
                 <label className={styles.label}>RG</label> 
                 <input
                   name='RG_Dep_3'  
                   className={styles.inputrg} 
-                  type='text'
-                  
-                  
+                  type='text'   
                 />
+                
                 <label className={styles.label}>CPF</label>                
                 <input                            
                   name='CPF_Dep_3'
-                  className={styles.inputcpf} 
-                                      
+                  className={styles.inputcpf}                 
                 />
                 
                 <MeuComponente />
