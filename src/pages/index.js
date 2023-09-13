@@ -65,7 +65,8 @@ export default function Home() {
                 <input 
                   name='Nome_Dep_1'
                   className={styles.inputnomedep} 
-                  type='text' 
+                  type='text'
+                  required  
                 />
 
                 <label className={styles.label}>Data de Nascimento*</label>
