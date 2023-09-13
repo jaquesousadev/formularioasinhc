@@ -5,9 +5,17 @@ import MaskedInput from '../components/maskinput';
 const MeuComponente = () => {
    
   const [exibirFormulario, setExibirFormulario] = useState(false);
+  const [exibirDependentes, setExibirDependentes] = useState(false);
 
   const handleClick = () => {
+   if (!exibirFormulario) {
     setExibirFormulario(true);
+    setExibirDependentes(true);
+   } else {
+      // No segundo clique, oculte o formulário e os dependentes
+      setExibirFormulario(false);
+      setExibirDependentes(false);
+   }
   };
 
   const [cpf, setCpf] = useState ('');
