@@ -306,6 +306,15 @@
   font-size: 14px;
   font-weight: 900;
 }
+.inputselecao {
+  background-color: white;
+  color: rgb(8, 8, 8);
+  width: 40%;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 900;
+}
 
 .inputdatanasc {
   background-color: white;
@@ -336,6 +345,7 @@
   font-size: 14px;
   font-weight: 900;
 }
+
 
 .inputcpf {
   background-color: white;

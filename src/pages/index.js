@@ -32,6 +32,12 @@ export default function Home() {
     setCep(event.target.value);
   };
 
+  const [opcaoSelecionada, setOpcaoSelecionada] = useState(''); // Estado para armazenar a opção selecionada
+
+  // Função para lidar com a mudança na seleção
+  const handleSelecaoChange = (event) => {
+    setOpcaoSelecionada(event.target.value);
+  };
    
 
    return (
@@ -60,6 +66,21 @@ export default function Home() {
                   type='text' 
                   required                 
                 />
+                <label className={styles.label} htmlFor="campoSelecao">Escolha uma opção*:</label>
+                  <select 
+                    className={styles.inputselecao} 
+                    name="campoSelecao" 
+                    value={opcaoSelecionada} 
+                    onChange={handleSelecaoChange}
+                    required
+                  >
+                    <option className={styles.label} value="">Selecione uma opção</option>
+                    <option className={styles.label} value="HC">Funcionário HC</option>
+                    <option className={styles.label} value="FFM">Funcionário FFM</option>
+                    <option className={styles.label} value="outros">Outros</option>
+                  </select>
+                  
+                  
                 <label className={styles.labeltituloinput}>DEPENDENTE 1</label>
                 <label className={styles.label}>Nome Completo*</label>
                 <input 
